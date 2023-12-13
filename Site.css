@@ -1,0 +1,147 @@
+@font-face {
+	font-family: 'Gilroy-ExtraBold'; 
+	src: url(Gilroy-ExtraBold.ttf); 
+}
+@font-face {
+	font-family: 'Gilroy-Light'; 
+	src: url(Gilroy-Light.ttf); 
+}
+:root{
+    box-sizing: border-box;
+    font-size: calc(1vw + 0.7em);
+}
+
+a:link{
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    font-family: Gilroy;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Распределение пространства между элементами */
+    align-items: center;
+    width: 100%;
+}
+
+/**************** NAV ******************/
+
+
+nav {
+    text-align: right;
+    margin-right: 16px;
+}
+
+/******************************************
+****************** MAIN *******************
+******************************************/
+body{
+    margin: 0;
+}
+
+body main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.photo{
+    display:flex;
+
+}
+.ph2{
+    padding-left: 50px;
+}
+
+/**************** BlOCK 1 ******************/
+.glavna{
+    padding: 2em 1.5em;
+    background: 
+        /*linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),/*/
+        url(metallokonstruk.jpg);
+    background-size: 100% 100%;
+    color: #fff;
+}
+
+
+/**************** BlOCK 2 ******************/
+
+.otrasl{
+    background-color: #f0f0f0;
+}
+
+.otrsl_2{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.btn{
+    color: #464646; /* цвет текста */
+    background: #f0f0f0; /* фон кнопки */
+    /*padding: .7em 1.5em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+    border: 2px solid #464646;
+} 
+.btn:hover { background: #464646; color: #f0f0f0;} /* при наведении курсора мышки */
+/*a.knopka:active { background: rgb(152,15,0); } при нажатии */
+
+.btnp{
+    border: 0; 
+}
+.h5{
+    color: #464646;
+}
+
+.imge{
+    /* Rectangle 288 */
+
+    width: 340px;
+    height: 215px;
+
+    /*background: 
+        url(Снимок экрана 2023-06-29 в 16.52.png);*/
+
+}
+
+/**************** BlOCK 4 ******************/
+
+.block4{
+    background: #d8d8d8;
+    color: #eb8329;
+}
+
+/**************** BlOCK 6 ******************/
+.section_6{
+    background: #464646;
+    color: #fff;
+    
+}
+
+.zavka{
+    display:block;
+    background:#464646;
+    
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
