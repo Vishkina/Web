@@ -1,6 +1,5 @@
 :root{
     box-sizing: border-box;
-    font-size: calc(1vw + 0.7em);
 }
 
 a:link{
@@ -71,50 +70,76 @@ body main{
 
 .photo{
     display:flex;
+    padding-left: 45px;
+    padding-top: 80px;
+    padding-bottom: 160px;
 
 }
 .ph2{
-    display:flex;
+    padding-left: 15px;
+    max-height: 186px;
+    max-width: 325px;
 }
 
 .glavna{
-    padding: 2em 1.5em;
-    max-width: 430; /* Фиксированная ширина прямоугольника */
-    max-height: 426;
-    background: 
-        url(metallokonstruk.jpg);
-    background-size: 100% 100%;
-    color: #fff;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    max-width: 430px;
     margin-left: auto;
     margin-right: auto;
+    height: 100%;
+    max-height: 426px;
+    background: 
+        url(metallokonstruk.jpg);
+    background-size: 200% 100%;
+    background-position: -190px;
+    color: #fff;
 }
 
+
 .otrasl{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
     background-color: #f0f0f0;
 }
 
 .otrsl_2{
+    margin-left: 45px;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 264px;
+    max-height: 232px;
 }
 .btn{
     color: #464646; /* цвет текста */
     background: #f0f0f0; /* фон кнопки */
     /*padding: .7em 1.5em; /* отступ от текста */
     outline: none; /* убирать контур в Mozilla */
+    height: 43px;
     border: 2px solid #464646;
 } 
 .btn:hover { background: #464646; color: #f0f0f0;} /* при наведении курсора мышки */
 /*a.knopka:active { } при нажатии */
 
 .btnp{
-    
+    padding-top: 60px;
+    padding-left: 113px;
     text-align: center;
 }
 .h5{
     color: #464646;
+    padding-left: 45px;
+    font-size: 24px;
+    padding-top: 50px;
 }
 
 .imge{
@@ -124,7 +149,15 @@ body main{
 }
 
 .sec3{
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    max-width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    
 }
 .block4{
     display:block;
@@ -161,6 +194,7 @@ input, textarea {
     width: 100%;
     box-sizing: border-box;
 }
+
 footer{    
     flex-direction: column;
 }
