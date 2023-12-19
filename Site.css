@@ -27,6 +27,8 @@ body{
     font-family: 'Mulish Medium';
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
 
 /* HEADER */
@@ -47,15 +49,17 @@ nav {
 
 /* MAIN */
 
-body main{
+main{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
 }
 
 
 /************************/
 .glavna{
-    font-size: 1.5rem;
     display: flex;
     width: 100%;
     height: 100%;
@@ -68,38 +72,41 @@ body main{
 
 .photo{
     display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     padding-left: 302px;
-    padding-top: 230px;
-    height: 260px;
+    width: 33.2%;
 }
 
 h1 {
     font-size: 2.5rem;
     padding-left: 15px;
-    width: 623px;
-
 }
 /************************/
 
 .otrasl{
-    display: flex;
     background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
     flex-direction: column;
-    height: 580px;
+    width: 100%;
+}
+
+.otrasl_center{
+    width: 68.5%;
 }
 
 .h5{
     color: #464646;
-    padding-left: 302px;
     padding-top: 80px;
     font-size: 2.125rem;
 }
 
-.otrsl_2{
-    padding-left: 302px;
-    padding-top: 104px;
-    display:flex;
-    flex-direction: row;
+.otrasl_2{
+    padding-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .btn{
@@ -109,66 +116,65 @@ h1 {
     height: 59px;
     border: 1.5px solid #464646;
     font-size: 1.375rem;
-} 
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .btn:hover { background: #464646; color: #f0f0f0;} /* при наведении курсора мышки */
 /*a.knopka:active { } при нажатии */
 
 .btnp{
-    padding-top: 192px;
-    padding-left: 534.5px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .btnp1{
     text-align: center;
     border: #f0f0f0;  
     font-size: 1.25rem;
     height: 20px;
-    width: 247px; 
 }
 
 /************************/
-
 .sec3{
-    height: 1152px;
+    width: 68.5%;
 }
 
 .img_sec3{
-    padding-left: 302px;
-    height: 892px;
-    width: 1316px;
+    padding-top: 100px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .sec3_img{
-    width: 412px;
+    width: 400px;
 }
 .sec3_img img{
     height: 260px;
-    width: 412px;
+    width: 400px;
 }
 
 .btnp2{
-    padding-left: 99px;
-    max-width: 142px;
-    max-height: 16px;
-    
+    padding-left: 574px;
 }
 
 .btn2{
-    border-color: #fff;
-    background-color: #fff;
+    text-align: center;
+    border: #fff;  
+    font-size: 1.25rem;
+    background: #fff;
+    line-height: 2;
 }
 
 /**************************/
 .block4{
+    height: 344px;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    max-width: 430px;
-    max-height: 322px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
+    flex-wrap: wrap;    
     background: #d8d8d8;    
     color: #eb8329;
     text-align: center;
@@ -176,88 +182,103 @@ h1 {
 
 .h2{
     text-align: center;
-    
+    font-weight: 900;   
 }
 
 .bl4{    
-    padding-left: 45px;
-    padding-top: 130px;
-    padding-bottom: 130px;
-    max-width: 340px;
-    max-height: 62px;
+    padding-left: 510px;
+    padding-top: 150px;
 }
+
+/**************************/
 
 .dol{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    max-width: 430px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
+    flex-direction: column;
+    height: 830px;
+}
+
+.dol h3{
+    color: #eb8329;
+    font-size: 2.125rem;
+    padding-left: 302px;
+    padding-top: 150px;
+}
+
+.dol p{
+    padding-left: 302px;
+    padding-top: 20px;
+    font-size: 1.375rem;
+    width: 864px;
+    height: 116px;
 }
 
 .twocol{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    max-width: 430px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-    padding-left: 45px;
+    width: 1314px;
+    height: 360px;
+    padding-left: 320px; 
 }
 
 .firstcolumn, .secondcolumn{
-    width: 140px; /* Фиксированная ширина прямоугольника */
-    height: 140px; /* Фиксированная высота прямоугольника */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 230px;
+    height: 160px;
 }
-.firstcolumn + .secondcolumn {
-    margin-left: 60px;
-    margin-bottom: 20px;
-}
-.firstcolumn img, .secondcolumn img{
-    padding-right: 60px;
-    padding-left: 60px;
-}
+
+/**************************/
 
 .section_6{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     width: 100%;
-    max-width: 430px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
+    display: flex;
+    justify-content: center;
     background: #464646;
     color: #fff;
-    
+}
+.global_6{
+    padding-top: 150px;
+    width: 68.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.textsec6{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 48.5%;
+    font-size: 1.375rem;
+}
+.h4{
+    font-size: 2.125rem;
+    font-weight: 2000;
+}
+.zavka{
+    background:#fff;
+    color: #1a1a1a;
+    height: 839px;
+    width: 48.5%;
+    padding-top: 50px;
 }
 
-.zavka{
-    display:block;
-    background:#fff;
-    max-width: 340px; 
-    color: #1a1a1a;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-
+.zavka input::placeholder {
+    color: #ABABAB; /* Цвет placeholder, выберите подходящий для вашего дизайна */
 }
 
 form {
-    
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding-left: 60px;
+}
+.checks{
+    display: flex;
+    flex-direction: row;
+}
+.oleg{
+    width: 20px;
+}
+.color{
+    color: #eb8329;
 }
 
 .container {
@@ -269,21 +290,12 @@ form {
 input{
     margin: 10px 0;
     padding: 10px;
-    width: 100%;
+    width: 518px;
     box-sizing: border-box;
 }
 
 footer{    
     color: #fff;
-    flex-direction: column;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    max-width: 430px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
     background-color: #1a1a1a;
 }
 footer a{
@@ -291,6 +303,5 @@ footer a{
 }
 
 .f1, .f2, .f3{
-    padding-left: 45px;
     text-align: left;
 }
