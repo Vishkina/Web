@@ -100,12 +100,19 @@ h1 {
 .h5{
     color: #464646;
     padding-top: 80px;
-    font-size: 2.125rem;
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding-left: 10px;
 }
 
 .otrasl_2{
     padding-top: 0px;
     display: flex;
+    flex-wrap: wrap;
+}
+.otrasl_22{
+    padding-top: 0px;
+    display: none;
     flex-wrap: wrap;
 }
 
@@ -114,9 +121,10 @@ h1 {
     background: #f0f0f0; /* фон кнопки */
     /*padding: .7em 1.5em; /* отступ от текста */
     height: 59px;
-    border: 1.5px solid #464646;
+    border: 3px solid #464646;
     font-size: 1.375rem;
     margin: 10px;
+    font-weight: 500;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -135,7 +143,42 @@ h1 {
     text-align: center;
     border: #f0f0f0;  
     font-size: 1.25rem;
-    font-family: 'Mulish Bold';
+    font-weight: bold;
+    color: #464646;
+}
+
+@media screen and (min-width: 375px) and (max-width: 830px){
+    .header{
+        height: 60px;
+    }
+    .reloadbutton{
+        padding-left: 45px;
+        padding-top: 12px;
+    }
+    nav {
+        margin-right: 45px;
+    }
+    .glavna{
+        height: 426px;
+        width: 100%;
+        background: url(metallokonstruk.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .photo{
+        padding-left: 45px;
+        width: 79%;
+    }
+    h1 {
+        font-size: 1.5rem;
+        padding-left: 10px;
+    }
+    .otrasl_2{
+        display: none;
+    }
+    .otrasl_22{
+        display: flex;
+    }
 }
 
 /************************/
@@ -153,6 +196,7 @@ h1 {
 .sec3_img{
     width: 400px;
     flex-direction: column;
+    line-height: 25px;
 }
 .sec3_img img{
     height: 260px;
@@ -182,6 +226,44 @@ h1 {
     background: #fff;
     line-height: 2;
     padding-bottom: 100px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 830px){
+    .sec3{
+        width: 80%;
+    }
+    .img_sec3{
+        padding-top: 100px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sec3_img{
+        flex-direction: column;
+        line-height: 25px;
+        padding-bottom: 30px;
+    }
+    .sec3_img img{
+        width: 100%;
+    }
+    .sec3_img p{
+        color: #464646;
+        font-size: 1.375rem;
+        font-family: 'Mulish Medium';
+    }
+    .zaglav{
+        font-size: 1.75rem;
+        font-weight: bold;
+        font-family: 'Mulish Bold';
+        padding-top: 8px;
+    }
+    .sec3_img p{
+        color: #464646;
+        font-size: 1.125rem;
+        font-family: 'Mulish Medium';
+        margin: 6px;
+    }
 }
 
 /**************************/
@@ -254,71 +336,80 @@ h1 {
 }
 .textsec6{
     display: flex;
-    align-items: center;
     flex-direction: column;
-    width: 48.5%;
+    width: 47.5%;
     font-size: 1.375rem;
 }
 .h4{
-    font-size: 2.125rem;
-    font-weight: 2000;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 .zavka{
     background:#fff;
     color: #1a1a1a;
-    width: 48.5%;
+    width: 47.5%;
     padding-top: 50px;    
     padding-bottom: 60px;
 }
-
-.zavka input::placeholder {
+.input_post::placeholder {
     color: #ABABAB; /* Цвет placeholder, выберите подходящий для вашего дизайна */
 }
-
 form {
     display: flex;
     flex-direction: column;
-    padding-left: 60px;
+    align-items: center;
 }
-.check{
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 30px;
+.input_post{
+    width: 77%;
+    border: 0.5mm solid;
+    border-color: #ababab;
 }
 .color{
     color: #eb8329;
 }
-
-.container {
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
+input{
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 81%;
 }
 
+.check{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    width: 81%;
+}
+.accept{
+    display: flex;
+    align-items: baseline;
+}
+.oleg{
+    width: 10%;
+}
+.gay{
+    width: 90%;
+}
 .btn_zavka{
     background-color: #1a1a1a;
     color: #fff;
-    width: 32.4%;
+    width: 44%;
     height: 56px;
+    font-weight: bold;
     font-size: 1.25rem;
-    font-family: 'Mulish Bold';
-}
-
-input{
-    margin: 10px 0;
-    padding: 10px;
-    width: 518px;
     box-sizing: border-box;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 footer{    
     color: #fff;
     background-color: #1a1a1a;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
 }
 footer a{
     color: #fff;
 }
 
-.f1, .f2, .f3{
-    text-align: left;
-}
