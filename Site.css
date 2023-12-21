@@ -135,7 +135,7 @@ h1 {
     text-align: center;
     border: #f0f0f0;  
     font-size: 1.25rem;
-    height: 20px;
+    font-family: 'Mulish Bold';
 }
 
 /************************/
@@ -152,10 +152,23 @@ h1 {
 }
 .sec3_img{
     width: 400px;
+    flex-direction: column;
 }
 .sec3_img img{
     height: 260px;
     width: 400px;
+}
+
+.sec3_img p{
+    color: #464646;
+    font-size: 1.375rem;
+    font-family: 'Mulish Medium';
+}
+
+.zaglav{
+    font-size: 1.75rem;
+    font-weight: bold;
+    font-family: 'Mulish Bold';
 }
 
 .btnp2{
@@ -168,26 +181,24 @@ h1 {
     font-size: 1.25rem;
     background: #fff;
     line-height: 2;
+    padding-bottom: 100px;
 }
 
 /**************************/
 .block4{
-    height: 344px;
-    display: flex;
+    width: 100%;
     flex-wrap: wrap;    
-    background: #d8d8d8;    
+    background: #d8d8d8;
+    background-size: 100% 100%;
     color: #eb8329;
     text-align: center;
 }
 
-.h2{
-    text-align: center;
-    font-weight: 900;   
-}
-
-.bl4{    
-    padding-left: 510px;
+.bl4{
     padding-top: 150px;
+    padding-bottom: 150px;
+    font-size: 2.125rem;
+    font-family: 'Mulish Bold';
 }
 
 /**************************/
@@ -195,18 +206,15 @@ h1 {
 .dol{
     display: flex;
     flex-direction: column;
-    height: 830px;
 }
 
 .dol h3{
     color: #eb8329;
     font-size: 2.125rem;
-    padding-left: 302px;
     padding-top: 150px;
 }
 
 .dol p{
-    padding-left: 302px;
     padding-top: 20px;
     font-size: 1.375rem;
     width: 864px;
@@ -218,11 +226,12 @@ h1 {
     flex-wrap: wrap;
     width: 1314px;
     height: 360px;
-    padding-left: 320px; 
+    justify-content: space-between;
+    padding-bottom: 100px;
 }
 
 .firstcolumn, .secondcolumn{
-    width: 230px;
+    width: 240px;
     height: 160px;
 }
 
@@ -237,6 +246,7 @@ h1 {
 }
 .global_6{
     padding-top: 150px;
+    padding-bottom: 150px;
     width: 68.5%;
     display: flex;
     flex-direction: row;
@@ -256,9 +266,9 @@ h1 {
 .zavka{
     background:#fff;
     color: #1a1a1a;
-    height: 839px;
     width: 48.5%;
-    padding-top: 50px;
+    padding-top: 50px;    
+    padding-bottom: 60px;
 }
 
 .zavka input::placeholder {
@@ -270,12 +280,10 @@ form {
     flex-direction: column;
     padding-left: 60px;
 }
-.checks{
+.check{
     display: flex;
     flex-direction: row;
-}
-.oleg{
-    width: 20px;
+    padding-bottom: 30px;
 }
 .color{
     color: #eb8329;
@@ -285,6 +293,15 @@ form {
     width: 50%;
     margin: 0 auto;
     text-align: center;
+}
+
+.btn_zavka{
+    background-color: #1a1a1a;
+    color: #fff;
+    width: 32.4%;
+    height: 56px;
+    font-size: 1.25rem;
+    font-family: 'Mulish Bold';
 }
 
 input{
