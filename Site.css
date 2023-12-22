@@ -507,6 +507,8 @@ footer{
     color: #fff;
     background-color: #1a1a1a;    
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .finish{
     padding-top: 50px;
@@ -517,12 +519,33 @@ footer{
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
+    font-size: 1.125rem;
+}
+
+.finish_2{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
 }
 footer a{
     color: #fff;
 }
 .F1{
-    width: 39.5%;
+    width: 40%;
+}
+
+.F1_logo{
+    padding-bottom: 39px;
+}
+.F1_icons{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 75px;
+    line-height: 38px;
 }
 .F1_text{
     display: flex;
@@ -531,16 +554,28 @@ footer a{
 .F1_orange{
     color: #eb8329;
 }
+
 .F2{
     display: flex;
     flex-direction: column;
-    width: 20%;
+    line-height: 33px;
 }
 .F3{
-    width: 22.4%;
+    width: 25%;
 }
+
+.F3_row{
+    display: flex;
+    flex-direction: row;
+}
+
+.F3_row img{
+    height: 25px;
+}
+
 .F3 option{
     color: #eb8329;
+    font-size: 1.75rem;
 }
 
 @media screen and (min-width: 375px) and (max-width: 830px){
