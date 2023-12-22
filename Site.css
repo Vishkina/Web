@@ -38,9 +38,12 @@ header {
     height: 80px;
 }
 
-.reloadbutton{
+.reloadbutton1{
     padding-left: 302px;
     padding-top: 14px;
+}
+.reloadbutton2{
+    display: none;
 }
 
 nav {
@@ -113,7 +116,7 @@ h1 {
 .otrasl_22{
     padding-top: 0px;
     display: none;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
 }
 
 .btn{
@@ -151,9 +154,14 @@ h1 {
     .header{
         height: 60px;
     }
-    .reloadbutton{
+    .reloadbutton1{
+        display: none;
+
+    }
+    .reloadbutton2{
         padding-left: 45px;
-        padding-top: 12px;
+        padding-top: 25px;
+        display: flex;
     }
     nav {
         margin-right: 45px;
@@ -173,11 +181,33 @@ h1 {
         font-size: 1.5rem;
         padding-left: 10px;
     }
+    .otrasl_center{
+        width: 80%;
+    }
+    .h5{
+        padding-top: 50px;
+        font-size: 1.25rem;
+        font-weight: bold;
+        padding-left: 10px;
+    }
     .otrasl_2{
         display: none;
     }
     .otrasl_22{
         display: flex;
+    }
+    .btn{
+        height: 43px;
+        font-size: 1rem;
+        border: 2px solid #464646;
+    }
+    .btnp{
+        padding-bottom: 50px;
+    }
+    .btnp1{
+        font-size: 1rem;
+        font-weight: bold;
+        color: #464646;
     }
 }
 
@@ -264,6 +294,9 @@ h1 {
         font-family: 'Mulish Medium';
         margin: 6px;
     }
+    .btnp2{
+        padding-left: 99px;
+    }
 }
 
 /**************************/
@@ -271,16 +304,22 @@ h1 {
     width: 100%;
     flex-wrap: wrap;    
     background: #d8d8d8;
-    background-size: 100% 100%;
     color: #eb8329;
     text-align: center;
 }
 
-.bl4{
+h2{
     padding-top: 150px;
     padding-bottom: 150px;
     font-size: 2.125rem;
-    font-family: 'Mulish Bold';
+    font-weight: bold;
+}
+@media screen and (min-width: 375px) and (max-width: 830px){
+    h2{
+        padding-top: 130px;
+        padding-bottom: 130px;
+        font-size: 1.5rem;
+    }
 }
 
 /**************************/
@@ -288,6 +327,7 @@ h1 {
 .dol{
     display: flex;
     flex-direction: column;
+    width: 68%;
 }
 
 .dol h3{
@@ -299,24 +339,47 @@ h1 {
 .dol p{
     padding-top: 20px;
     font-size: 1.375rem;
-    width: 864px;
+    width: 66%;
     height: 116px;
 }
 
 .twocol{
     display: flex;
     flex-wrap: wrap;
-    width: 1314px;
+    width: 100%;
     height: 360px;
     justify-content: space-between;
     padding-bottom: 100px;
 }
 
 .firstcolumn, .secondcolumn{
-    width: 240px;
+    width: 18%;
     height: 160px;
 }
 
+@media screen and (min-width: 375px) and (max-width: 830px){
+    .dol{
+        width: 80%;
+    }
+    .dol h3{
+        font-size: 1.5rem;
+        padding-top: 100px;        
+    }
+    .dol p{
+        font-size: 1.125rem;
+        width: 100%;
+        height: 184px;
+    }
+    .twocol{
+        width: 100%;
+        height: 780px;
+        justify-content: space-between;
+    }
+    .firstcolumn, .secondcolumn{
+        width: 140px;
+        height: 140px;
+    }
+}
 /**************************/
 
 .section_6{
@@ -352,7 +415,7 @@ h1 {
     padding-bottom: 60px;
 }
 .input_post::placeholder {
-    color: #ABABAB; /* Цвет placeholder, выберите подходящий для вашего дизайна */
+    color: #ABABAB;
 }
 form {
     display: flex;
@@ -362,7 +425,22 @@ form {
 .input_post{
     width: 77%;
     border: 0.5mm solid;
+    font-size: 1rem;
     border-color: #ababab;
+}
+
+.texar{
+    width: 77%;
+    margin-bottom: 20px;
+    border: 0.5mm solid;
+    border-color: #ababab;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'Mulish Medium';
+}
+.texar::placeholder{
+    color: #ABABAB;
 }
 .color{
     color: #eb8329;
@@ -370,7 +448,6 @@ form {
 input{
     margin-bottom: 20px;
     padding: 10px;
-    width: 81%;
 }
 
 .check{
@@ -381,12 +458,11 @@ input{
 }
 .accept{
     display: flex;
-    align-items: baseline;
 }
 .oleg{
     width: 10%;
 }
-.gay{
+.chek_label{
     width: 90%;
 }
 .btn_zavka{
@@ -400,16 +476,78 @@ input{
     justify-content: center;
     margin-top: 20px;
 }
+@media screen and (min-width: 375px) and (max-width: 830px){
+    .global_6{
+        padding-top: 60px;
+        width: 80%;
+        flex-direction: column;
+    }
+    .textsec6{
+        width: 100%;
+        font-size: 1.125rem;
+        padding-bottom: 50px;
+    }
+    .h4{
+        font-size: 1.5rem;
+    }
+    .zavka{
+        width: 100%;
+    }
+    .btn_zavka{
+        width: 100%;
+        font-size: 0.938rem;
+        font-weight: 500;
+        height: 51px;
+    }
+}
+
+/************************/
 
 footer{    
     color: #fff;
-    background-color: #1a1a1a;
+    background-color: #1a1a1a;    
+    width: 100%;
+}
+.finish{
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 70%;
     justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
 }
 footer a{
     color: #fff;
 }
+.F1{
+    width: 39.5%;
+}
+.F1_text{
+    display: flex;
+    flex-direction: row;
+}
+.F1_orange{
+    color: #eb8329;
+}
+.F2{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.F3{
+    width: 22.4%;
+}
+.F3 option{
+    color: #eb8329;
+}
 
+@media screen and (min-width: 375px) and (max-width: 830px){
+    footer{
+        display: none;
+    }
+    footer a{
+        display: none;
+    }
+}
