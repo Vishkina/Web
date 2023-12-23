@@ -8,36 +8,64 @@
 </head>
 <body>
     <header>
-        <div class="reloadbutton1">
-            <a href="">  
-                <img src="logo/Logo1.png" alt="SteelMetriXX"> 
-            </a>
-        </div>
-        <div class="reloadbutton2">
-            <a href="">  
-                <img src="logo/Logo2.png" alt="SteelMetriXX"> 
-            </a>
-        </div>
-
-        <nav class="menu" id="main-menu">
-            <div class="mainmenu">
-                <select name="navigation" id="navigation" onchange="window.location.href = this.options[this.selectedIndex].value">
-                    <option value="#glavna" disabled hidden selected></option>
-                    <option value="#glavna">Главная</option>
-                    <option value="#">Компетенция</option>
-                    <option value="#ocompan">О компании</option>
-                    <option value="#contacts">Контакты</option>
-                    <option value="tel:+79999999999">8(800)302-74-79</option>
-                </select>
+        <div class="header-inside">
+            <div class="logoplace">
+                <a href="">  
+                    <img class="logo" src="logo/Logo1.png" alt="SteelMetriXX"> 
+                </a>
             </div>
-        </nav>
+            <nav class="menu">
+                <div class="menu-button">
+                    <div class="dropdown">
+                        <img src="logo/nav.svg" width="40rem" alt="Кнопка «button»">
+                        <div class="dropdown-content">
+                            <a href="#glavna">Главная</a>
+                            <a href="#">Компетенция</a>
+                            <a href="#ocompan">О компании</a>
+                            <a href="#contacts">Контакты</a>
+                            <a href="tel:+79999999999">8(800)302-74-79</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <nav class="menu2">
+                <a href="#glavna">Главная</a>
+                <a href="#">Компетенция</a>
+                <a href="#ocompan">О компании</a>
+                <a href="#contacts">Контакты</a>
+                <a class="telef" href="tel:+79999999999">8(800)302-74-79</a>
+            </nav>
+            <nav class="menu3">
+                <div class="menu-tel">                
+                    <a class="telef" href="tel:+79999999999">8(800)302-74-79</a>
+                </div>
+                <div class="menu-button">
+                    <div class="dropdown">
+                        <img src="logo/nav.svg" width="40rem" alt="Кнопка «button»">
+                        <div class="dropdown-content">
+                            <a href="#glavna">Главная</a>
+                            <a href="#">Компетенция</a>
+                            <a href="#ocompan">О компании</a>
+                            <a href="#contacts">Контакты</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
+
     <main>
         <section id="glavna" class="glavna">
             <div class="photo">
                 <div class="squere">
                     <img src="logo/squere.png" alt="">
                 </div> 
+                <div class="squere2">
+                    <img src="logo/squere2.jpg" alt="">
+                </div>
+                <div class="squere3">
+                    <img src="logo/squere3.png" alt="">
+                </div>  
 
                 <div class="ph2">
                     <h1>
@@ -50,7 +78,7 @@
         <section id="otrasl" class="otrasl">
             <div class="otrasl_center">
                 <div>
-                    <h5 class="h5">ОТРАСЛЬ</h5>
+                    <h2 class="h5">ОТРАСЛЬ</h2>
                 </div>            
                 <div id="myBtnContainer" class="otrasl_2">
                     <button class="btn" onclick="filterSelection('all')">Все</button>
@@ -74,6 +102,16 @@
                     <button class="btn" onclick="filterSelection('Torgorg')">Торговые организации</button>
                     <button class="btn" onclick="filterSelection('fabric')">Промышленность</button>
                 </div>
+                <div id="myBtnContainer" class="otrasl_23">
+                    <button class="btn" onclick="filterSelection('all')">Все</button>
+                    <button class="btn" onclick="filterSelection('Selhoz')">Сельское хозяйство</button>
+                    <button class="btn" onclick="filterSelection('Logandsclad')">Логистика и склады</button>
+                    <button class="btn" onclick="filterSelection('Torgorg')">Торговые организации</button>
+                    <button class="btn" onclick="filterSelection('fabric')">Промышленность</button>
+                    <button class="btn" onclick="filterSelection('fabric')">Спортивные организации</button>
+                    <button class="btn" onclick="filterSelection('fabric')">Проживание и размещение людей</button>
+                    <button class="btn" onclick="filterSelection('fabric')">Энергетика</button>
+                </div>
                 <div class="btnp">
                     <button class="btnp1"> Показать все фильтры → </button>
                 </div>
@@ -82,79 +120,68 @@
         
         
         <section id="sec3" class="sec3">
-            <div class="img_sec3">
-                <div class="sec3_img">
+            <ol class="img_sec3">
+                <h2>Section_3</h2>
+                <li class="sec3_img">
                     <img src="pic.jpg" alt="Картинка не загрузилась">
-                    <p class="zaglav">
-                        Завод Пегас Агро
-                    </p>
+                    <h3 class="zaglav">Завод Пегас Агро</h3>
                     <p>
                         20 000 кв.м
                     </p>
                     <p>
                         пгт. Стройкерамик, Самарская обл.
                     </p>
-                </div>
-                <div class="sec3_img">
+                </li>
+                <li class="sec3_img">
                     <img src="pic_2.png" alt="Картинка не загрузилась">
-                    <p class="zaglav">
-                        Комплекс ангаров
-                    </p>
+                    <h3 class="zaglav">Комплекс ангаров</h3>
                     <p>
                         3 240 кв.м
                     </p>
                     <p>
                         с. Александровка, Грачевского р-на
                     </p>
-                </div>
-                <div class="sec3_img">
+                </li>
+                <li class="sec3_img">
                     <img src="pic_3.png" alt="Картинка не загрузилась">
-                    <p class="zaglav">
-                        Казармы
-                    </p>
+                    <h3 class="zaglav">Казармы</h3>
                     <p>
                         3 560 кв.м
                     </p>
                     <p>
                         Оренбургская обл.
                     </p>
-                </div>
-                <div class="sec3_img">  
+                </li>
+                <li class="sec3_img">  
                     <img src="pic_4.png" alt="Картинка не загрузилась">
-                    <p class="zaglav">
-                        Птичники
-                    </p>
+                    <h3 class="zaglav">Птичники</h3>
                     <p>
                         12 000 кв.м
                     </p>
                     <p>
                         с. Потьма, Пензенская обл.
                     </p>
-                </div>
-                <div class="sec3_img">
+                </li>
+                <li class="sec3_img">
                     <img src="pic5.jpg" alt="Картинка не загрузилась">
-                    <p class="zaglav">
-                        Торгово-выставочный центр
-                    </p>
+                    <h3 class="zaglav">Торгово-выставочный центр</h3>
                     <p>
                         960 кв.м
                     </p>
                     <p>
                         г. Оренбург
                     </p>
-                </div>
-                <div class="sec3_img">
+                </li>
+                <li class="sec3_img">
                     <img src="pic_6.jpg" alt="Картинка не загрузилась">
-                    <p class="zaglav">
-                        Завод по горячему цинкованию металлоконструкций
-                    </p>
+                    <h3 class="zaglav">Завод по горячему цинкованию металлоконструкций</h3>
                     <p>
                         13 000 кв.м
                     </p>
                         г. Можайск, Московская обл.
                     </p>
-                </div>
-            </div>
+                </li>
+            </ol>
             <div class="btnp2">
                 <button class="btn2"> Показать еще → </button>
             </div>
@@ -164,36 +191,34 @@
                 <h2>Ваше спокойствие от работы с надежным партнером</h2>
         </section>
 
-        <section class="dol">
+        <section id="ocompan" class="dol">
             <div class="sec_5">
-                <h3 id="ocompan">ЛИДЕРЫ ОТРАСЛИ ВЫБИРАЮТ НАС</h3>
+                <h2 class="sec5h2">ЛИДЕРЫ ОТРАСЛИ ВЫБИРАЮТ НАС</h2>
                 <p class="ocompt">
                     В SteelMetriXX мы адаптируем наш подход к потребностям наших клиентов.
                     Независимо от того, начинаете ли вы малый бизнес или являетесь крупной корпорацией,
                     стремящейся расширить свою деятельность,
                     мы — подходящая команда для вас.
                 </p>
-                <div class="twocol">
-                    <div class="firstcolumn"><img src="sec5_1.png" alt="Картинка не загрузилась"></div>
-                    <div class="secondcolumn"><img src="sec5_2.png" alt="Картинка не загрузилась"></div>
-                    <div class="firstcolumn"><img src="sec5_3.png" alt="Картинка не загрузилась"></div>
-                    <div class="secondcolumn"><img src="sec5_4.png" alt="Картинка не загрузилась"></div>
-                    <div class="firstcolumn"><img src="sec5_5.png" alt="Картинка не загрузилась"></div>
-                    <div class="secondcolumn"><img src="sec5_6.png" alt="Картинка не загрузилась"></div>
-                    <div class="firstcolumn"><img src="sec5_7.png" alt="Картинка не загрузилась"></div>
-                    <div class="secondcolumn"><img src="sec5_8.png" alt="Картинка не загрузилась"></div>
-                    <div class="firstcolumn"><img src="sec5_9.png" alt="Картинка не загрузилась"></div>
-                    <div class="secondcolumn"><img src="sec5_10.png" alt="Картинка не загрузилась"></div>
-                </div>
+                <ol class="twocol">
+                    <li class="firstcolumn"><img src="sec5_1.png" alt="Картинка не загрузилась"></li>
+                    <li class="secondcolumn"><img src="sec5_2.png" alt="Картинка не загрузилась"></li>
+                    <li class="firstcolumn"><img src="sec5_3.png" alt="Картинка не загрузилась"></li>
+                    <li class="secondcolumn"><img src="sec5_4.png" alt="Картинка не загрузилась"></li>
+                    <li class="firstcolumn"><img src="sec5_5.png" alt="Картинка не загрузилась"></li>
+                    <li class="secondcolumn"><img src="sec5_6.png" alt="Картинка не загрузилась"></li>
+                    <li class="firstcolumn"><img src="sec5_7.png" alt="Картинка не загрузилась"></li>
+                    <li class="secondcolumn"><img src="sec5_8.png" alt="Картинка не загрузилась"></li>
+                    <li class="firstcolumn"><img src="sec5_9.png" alt="Картинка не загрузилась"></li>
+                    <li class="secondcolumn"><img src="sec5_10.png" alt="Картинка не загрузилась"></li>
+                </ol>
             </div>            
         </section>
         
         <section class="section_6">
             <div class="global_6">
                 <div class="textsec6">
-                    <h4>Поможем реализовать
-                        ваш проект
-                    </h4>
+                    <h2 class="h4">Поможем реализовать ваш проект</h2>
                     <p>Заполните форму и мы свяжемся с вами в течение рабочего дня.</p>
                     <p>
                         Наши технологи и проектировщики
@@ -207,18 +232,18 @@
                     </p>
                 </div>
                 <div class="zavka">
-                    <form method="post">
-                            <input class="input_post" type="text" id="name" name="name" required placeholder="Ваше имя*">
-                            <input class="input_post" type="email" id="email" name="email" required placeholder="E-mail*">
-                            <input class="input_post" type="tel" id="phone" name="phone" placeholder="Телефон">
-                            <input class="input_post" type="text" id="region" name="region" placeholder="Регион">
-                            <input class="input_post" type="text" id="city" name="city" required placeholder="Город(населённый пункт)*">
-                            <input class="input_post" type="text" id="otras" name="otras" required placeholder="Отрасль*">
-                            <textarea class="texar" cols="30" rows="10" placeholder="Комментарий"></textarea>
+                    <form action="//httpbin.org/post">
+                            <label class="input_post" for=""><input type="text" id="name" name="name" required placeholder="Ваше имя*"></label>
+                            <label class="input_post" for=""><input type="email" id="email" name="email" required placeholder="E-mail*"></label>
+                            <label class="input_post" for=""><input type="tel" id="phone" name="phone" placeholder="Телефон"></label>
+                            <label class="input_post" for=""><input type="text" id="region" name="region" placeholder="Регион"></label>
+                            <label class="input_post" for=""><input type="text" id="city" name="city" required placeholder="Город(населённый пункт)*"></label>
+                            <label class="input_post" for=""><input type="text" id="otras" name="otras" required placeholder="Отрасль*"></label>
+                            <label class="input_post" for=""><textarea class="texar" cols="30" rows="10" placeholder="Комментарий"></textarea></label>
                         <div class="check">
                             <div class="accept">
                                 <input class="oleg" type="checkbox" id="scales" name="scales"/>
-                                <label class="chek_label" for="scales"><label class="color" for="">Соглашаюсь</label> на обработку персональных данных в соответствии с <label class="color" for="">Политикой конфиденциальности </label></label>
+                                <label class="chek_label" for="scales"><label class="color">Соглашаюсь</label> на обработку персональных данных в соответствии с <label class="color">Политикой конфиденциальности </label></label>
                             </div>
                             <button type="submit" class="btn_zavka">Отправить заявку</button>
                         </div>
@@ -236,17 +261,17 @@
                 </div>
                 
                 <div class="F1_icons">
-                    <a href="#">
+                    <a href="//web.telegram.org/">
                         <img src="logo/Telegram icon.png" alt="SteelMetriXX">
                         Telegram 
                     </a>
                 
-                    <a href="#https://web.whatsapp.com/">
+                    <a href="//web.whatsapp.com/">
                         <img src="logo/Whatsapp icon.png" alt="SteelMetriXX">
                         WhatsApp  
                     </a>
                 
-                    <a href="#https://www.youtube.com/">
+                    <a href="//www.youtube.com/">
                         <img src="logo/Youtube icon.png" alt="SteelMetriXX">
                         YouTube 
                     </a>
@@ -282,14 +307,122 @@
         <div class="finish_2">
             <div class="F1_text">
                 <p class="F1_orange">Политика конфиденциальности </p>
-                <p class="F1_and"> и </p>
+                <p class="F1_and">  и </p>
                 <p class="F1_orange"> Техническая документация</p>
            </div>
             <div>
                 <p>© ООО “SteеlMetrixx” 2023</p>
             </div>
         </div>
-        
+               
     </footer>
+
+    <div id="contacts" class="footer_mob">
+        <div class="footer_mob1">
+            <div class="F1_logo"> 
+                <img src="logo/Logo2.png" alt="SteelMetriXX">                
+            </div> 
+            <div class="FM2"> 
+                <option value="tel:+78003027479">8(800)302-74-79</option> 
+                <p>Звонок по России бесплатный</p> 
+            </div> 
+            <div class="F1_icons">
+                <a href="//web.telegram.org/">
+                    <img src="logo/Telegram icon.png" alt="SteelMetriXX">
+                    Telegram 
+                </a>
+            
+                <a href="//web.whatsapp.com/">
+                    <img src="logo/Whatsapp icon.png" alt="SteelMetriXX">
+                    WhatsApp  
+                </a>
+            
+                <a href="//www.youtube.com/">
+                    <img src="logo/Youtube icon.png" alt="SteelMetriXX">
+                    YouTube 
+                </a>
+            </div> 
+            <div class="F3_row"> 
+                <img src="logo/mail icon.png" alt="SteelMetriXX">                     
+                <p><ins>info@stelmetrixx.ru</ins></p> 
+            </div> 
+            <div class="F3_row"> 
+                <img src="logo/location icon.png" alt="SteelMetriXX"> 
+                <p><ins>Оренбургская область, Оренбургский район, поселок Пригородный, ул. Зерновая, 2</ins></p> 
+            </div> 
+            <div class="F2"> 
+                <a href="#glavna">О компании</a> 
+                <a href="#otrasl">Производственные технологии</a> 
+                <a href="#sec3">Выполненные проекты</a> 
+                <a href="#f2">Контакты</a> 
+            </div> 
+            <div class="F1_text">
+                <p class="F1_orange">Политика конфиденциальности </p>
+                <p class="F1_orange"> Техническая документация</p>
+            </div>
+            <div class="FM">
+                <p>© ООО “SteеlMetrixx” 2023</p>
+            </div>
+        </div>
+    </div>
+    <div id="contacts" class="footer_3">
+        <div class="finish">
+            <div class="F1">
+                <div class="F1_logo">
+                    <img src="logo/Logo1.png" alt="SteelMetriXX">               
+                </div>
+                
+                <div class="F1_icons">
+                    <a href="//web.telegram.org/">
+                        <img src="logo/Telegram icon.png" alt="SteelMetriXX">
+                        Telegram 
+                    </a>
+                
+                    <a href="//web.whatsapp.com/">
+                        <img src="logo/Whatsapp icon.png" alt="SteelMetriXX">
+                        WhatsApp  
+                    </a>
+                
+                    <a href="//www.youtube.com/">
+                        <img src="logo/Youtube icon.png" alt="SteelMetriXX">
+                        YouTube 
+                    </a>
+                </div>
+                
+            </div>
+
+            <div class="F3">
+                <div class="F3_1">
+                    <option value="tel:+78003027479">8(800)302-74-79</option>
+                    <p>Звонок по России бесплатный</p>
+                </div>
+                <div class="F3_row">
+                    <img src="logo/mail icon.png" alt="SteelMetriXX">                    
+                    <p><ins>info@stelmetrixx.ru</ins></p>
+                </div>
+                <div class="F3_row">
+                    <img src="logo/location icon.png" alt="SteelMetriXX">
+                    <p><ins>Оренбургская область, Оренбургский район, поселок Пригородный, ул. Зерновая, 2</ins></p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="F2">
+            <a href="#glavna">О компании</a>
+            <a href="#otrasl">Производственные технологии</a>
+            <a href="#sec3">Выполненные проекты</a>
+            <a href="#f2">Контакты</a>
+        </div>
+        <div class="finish_2">
+            <div class="F1_text">
+                <p class="F1_orange">Политика конфиденциальности </p>
+                <p class="F1_orange"> Техническая документация</p>
+           </div>
+            <div>
+                <p>© ООО “SteеlMetrixx” 2023</p>
+            </div>
+        </div>
+               
+    </div>
 </body>
 </html>
